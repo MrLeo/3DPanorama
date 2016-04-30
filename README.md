@@ -18,19 +18,19 @@
 > - CSS3DRenderer.js
 >
 > 源码Demo：[http://mrleo.github.io/3DPanorama](http://mrleo.github.io/3DPanorama)
+
 ###设置相机
 ```js
-//设置相机
 camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
 ```
+
 ### 设置场景
 ```js
-//设置场景
 scene = new THREE.Scene();
 ```
+
 ###定义3D空间的6个面的背景
 ```js
-//设置3D空间的6个面
 var sides = [{
 	url: '../static/img/gugong/posx.jpg',
 	position: [-512, 0, 0],
@@ -57,9 +57,9 @@ var sides = [{
 	rotation: [0, 0, 0]
 }];
 ```
-###将定义好的6各面添加到空间中
+
+### 将定义好的6各面添加到空间中，并为每个空间指定ID
 ```js
-//将六个面添加到空间中，并为每个空间指定ID
 for (var i = 0; i < sides.length; i++) {
 	var side = sides[i];
 	var element = document.createElement('section');
@@ -74,18 +74,16 @@ for (var i = 0; i < sides.length; i++) {
 	scene.add(object);
 }
 ```
+
 ### 设置渲染器
 ```js
-//设置渲染器
 renderer = new THREE.CSS3DRenderer();//定义渲染器
 renderer.setSize(window.innerWidth, window.innerHeight);//设置尺寸
 document.body.appendChild(renderer.domElement);//将场景加入页面
 ```
+
 ### 空间实时渲染
 ```js
-/**
- * 实时渲染
- */
 function animate() {
 	requestAnimationFrame(animate);
 	//lon = Math.max(-180, Math.min(180, lon));//限制固定角度内旋转
@@ -101,11 +99,9 @@ function animate() {
 	renderer.render(scene, camera);
 }
 ```
+
 ###为每个面构建空间的图标物件
 ```js
-/*
- * 添加图标
- */
 function addIcon(){
 	var imgIcon = document.createElement('img');
 	imgIcon.src = '../static/img/arrow_right.png';
@@ -114,17 +110,16 @@ function addIcon(){
 }
 addIcon();
 ```
+
 ###窗体大小改变更新相机
 ```js
-/**
- * 窗体大小改变
- */
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize(window.innerWidth, window.innerHeight);
 }
 ```
+
 ###监听鼠标事件
 ```js
 function onDocumentMouseDown(event) {
@@ -153,9 +148,9 @@ function onDocumentMouseWheel(event) {
 	camera.updateProjectionMatrix();
 }
 ```
+
 ###监听触摸事件
 ```js
-//监听触摸事件
 function onDocumentTouchStart(event) {
 	event.preventDefault();
 	var touch = event.touches[0];
