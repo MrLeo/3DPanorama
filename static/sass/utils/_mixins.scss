@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*********************************************************
+ * Sass Mixins
+ *********************************************************/
+
+/* 常用浏览器标识符start */
+/* 背景start */
+/* 背景起始位置content-box padding-box border-box */
+@mixin backorigin($val){-webkit-background-origin:$val; -moz-background-origin:$val; -ms-background-origin:$val; -o-background-origin:$val; -khtml-background-clip: $val; background-origin: $val;}
+/* 背景剪切位置content-box padding-box border-box */
+@mixin backclip($val){-webkit-background-clip: $val;-moz-background-clip: $val;-ms-background-clip: $val;-o-background-clip: $val;-khtml-background-clip: $val; background-clip: $val;}
+/* 背景大小 length % cover contain */
+@mixin backsize($val1){-webkit-background-size: $val1;-moz-background-size: $val1;-khtml-background-size: $val1;-ms-background-size: $val1;-o-background-size: $val1;background-size: $val1;}
+/* 背景end */
+/* flex伸缩盒模型start */
+/* 盒模型解析属性 content-box border-box */
+@mixin boxsizing($val){-webkit-box-sizing:$val;-moz-box-sizing:$val;-o-box-sizing:$val;-ms-box-sizing:$val;box-sizing:$val;}
+/* 定义为伸缩盒 */
+@mixin disflex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+/* 伸缩盒对象子元素排列方式 horizontal vertical inline-axis block-axis */
+@mixin boxorient($val){-webkit-box-orient:$val;-moz-box-orient:$val;}
+/* 伸缩盒对象子元素排列方式是否翻转 normal reverse */
+@mixin boxdirection($val){-webkit-box-direction:$val;-moz-box-direction:$val;}
+/* 伸缩盒对象子元素在侧轴方向的对齐方式 flex-start flex-end center baseline stretch */
+@mixin alignitems($val){-webkit-box-align:$val;-moz-box-align:$val;-ms-flex-align:$val;-webkit-align-items:$val;align-items:$val;}
+/* 伸缩盒对象子元素的空间分配 */
+@mixin flex($val){-webkit-box-flex:$val;-moz-box-flex:$val;-ms-flex:$val;-webkit-flex:$val;flex:$val;}
+/* 伸缩盒对象的子元素是否可以换行显示 */
+@mixin boxlines($val){-moz-box-lines:$val;-webkit-box-lines:$val;}
+@mixin flexflow($val){-webkit-flex-flow:$val;-ms-flex-flow:$val; flex-flow:$val;}
+/* 伸缩盒对象子元素排序 */
+@mixin grouporder($val){-moz-box-ordinal-group:$val;-webkit-box-ordinal-group:$val;-ms-flex-order:$val;-webkit-order:$val;order:$val;}
+/* flex伸缩盒模型end */
+/* 多列布局start */
+@mixin columns($val) {-moz-columns:$val;-webkit-columns:$val;columns:$val;}
+@mixin columnwidth($val){-moz-column-width:$val;-webkit-column-width:$val;column-width:$val;}
+@mixin columncount($val){-moz-column-count:$val;-webkit-column-count:$val;column-count:$val;}
+@mixin columngap($val){-moz-column-gap:$val;-webkit-column-gap:$val;column-gap:$val;}
+@mixin columnrule($val){-moz-column-rule:$val;-webkit-column-rule:$val;column-rule:$val;}
+@mixin columnspan($val){-moz-column-span:$val;-webkit-column-span:$val;column-span:$val;}
+/* 多列布局end */
+/* 常用浏览器标识符end */

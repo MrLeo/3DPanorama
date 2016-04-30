@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>three.js css3d - panorama</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+		<style>
+			body {
+				background-color: #000000;
+				margin: 0;
+				cursor: move;
+				overflow: hidden;
+			}
+			a {
+				color: #ffffff;
+			}
+			#info {
+				position: absolute;
+				width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family: Monospace;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+				z-index: 1;
+			}
+			.icon{
+				position: absolute;
+				top: 53%;
+				left: 63%;
+				z-index: 10;
+				width: 90px;
+				-moz-transform:rotateX(60deg) rotateY(0) rotateZ(-108deg); /* Firefox */
+				-webkit-transform:rotateX(60deg) rotateY(0) rotateZ(-108deg); /* Safari and Chrome */
+				transform:rotateX(60deg) rotateY(0) rotateZ(-108deg);
+				transition: all .1s ease-in;
+			}
+			.icon:hover{
+				-moz-transform:scale(1.5) rotateX(60deg) rotateY(0) rotateZ(-108deg); /* Firefox */
+				-webkit-transform:scale(1.5) rotateX(60deg) rotateY(0) rotateZ(-108deg); /* Safari and Chrome */
+				transform:scale(1.5) rotateX(60deg) rotateY(0) rotateZ(-108deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info"><a href="http://threejs.org" target="_blank">three.js css3d</a> - panorama demo. cubemap by <a href="http://www.humus.name/index.php?page=Textures" target="_blank">Humus</a>.</div>
+		<script src="../static/libs/three/three.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/libs/three/CSS3DRenderer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/libs/jquery/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/three.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+
+

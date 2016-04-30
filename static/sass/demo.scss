@@ -1,0 +1,90 @@
+@charset "utf-8";
+/**
+ * Demo 页面样式
+ */
+@mixin box-shadows($x,$y:$x,$z:$x){
+    -webkit-box-shadow: $x $y $z #666;
+    -moz-box-shadow: $x $y $z #666;
+    box-shadow: $x $y $z #666;
+}
+@mixin clearfix{
+    &:after{
+        content:""; 
+        display:block; 
+        clear:both; 
+        height:0;
+    }
+}
+#output{
+    width: 80%;
+    margin: 10px auto;
+    font-family: "微软雅黑";    
+    @include box-shadows(2px);
+    border: 1px solid #eee;
+    padding: 20px;
+    .title{
+        text-align: center;
+        font-size: 25px{
+            width:bolder;
+        };
+    }
+    .version-info{
+        text-align: center;
+        dt{
+            font-size: 30px;
+            line-height: 40px;
+            &:before{
+                content:"作者：";
+            }
+        }
+        dd{
+            margin:{
+                top:10px
+            };
+            line-height: 25px;
+        }
+    }
+}
+#nowDate{
+    text-align: center;
+}
+.map{
+    width: 80%;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    @include box-shadows(2px);
+}
+.ko{
+    @include box-shadows(2px);
+    border:1px solid #eee;
+    width:80%;
+    margin:{
+        top:20px;
+        left: auto;
+        right: auto;
+    };
+    .ko-title{
+        margin: {
+            top:20px;
+        };
+    }
+    .koList{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .koList li{
+        @extend .koList;
+        min-width: 50px;
+        flex:1 1 auto;
+        @include clearfix;
+        input[type=text]{
+            margin:10px 5px;
+            text-align: center;
+        }
+    }
+}
+
+

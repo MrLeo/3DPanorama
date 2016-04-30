@@ -1,0 +1,30 @@
+{
+  "name": "SeaJS",
+  "version": "1.0.0",
+  "author": "Leo",
+  "spm": {
+    "alias": {
+    	"base": "module/base/base", 
+    	"console": "common/main/console", 
+    	"ajax": "common/ajax/ajax", 
+    	"sweetalert": "libs/sweetalert/dist/sweetalert.min", 
+    	"superslide": "libs/super-slide/jquery.SuperSlide.2.1.1", 
+    	"lq": "libs/lq-date/js/lq.datetimepick", 
+    	"dateRange": "libs/pickerDateRange/dateRange", 
+    	"react": "libs/react/build/react", 
+    	"vue": "libs/vue/vue", 
+    	"ko": "libs/knockoutjs/knockout-3.3.0", 
+    	"underscore": "libs/underscore/underscore-min", 
+    	"zepto": "libs/zepto/zepto", 
+    	"jquery": "libs/jquery/jquery-1.8.3.min", 
+    	"jquery-2.0.3": "libs/jquery/jquery-2.0.3.min" 
+    }
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cmd-transport": "*",
+    "grunt-cmd-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-clean": "*"
+  }
+}

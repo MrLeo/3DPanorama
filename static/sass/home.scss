@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*********************************************************
+ * Home Page
+ *********************************************************/
+
+@import 'utils/mixins',
+
+* {@include boxsizing(border-box);}
+::selection {background: red; color: #FFF;}
+html {height: 100%;}
+body , section {@include disflex;}
+body {@include boxorient(vertical); @include boxdirection(normal);@include boxlines(multiple);@include flexflow(column wrap);height: 100%;}
+header , section { width:90%; margin: 0 auto;}
+header { background:rgba(255,0,0,0.5); height: 200px;}
+section {@include boxorient(horizontal); @include boxdirection(normal); @include boxlines(multiple); @include flexflow(row wrap); @include flex(1);@include alignitems(stretch); margin:2em auto; min-height:600px;}
+article {@include flex(4); @include grouporder(2); background-color:rgba(100,200,100,1); margin:0 2em; padding:1em;}
+aside {@include grouporder(3); @include flex(1); background-color:rgba(200,200,100,1); padding:1em;}
+nav {@include flex(1); background-color:rgba(100,200,150,1); padding:1em;}
+footer {width:90%;height:200px; margin: 0 auto; background:rgba(255,100,0,0.5);}
