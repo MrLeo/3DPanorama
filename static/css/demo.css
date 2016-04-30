@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/** Demo 页面样式 */
+/* line 18, ../sass/demo.scss */
+#output { width: 80%; margin: 10px auto; font-family: "微软雅黑"; box-shadow: 2px 2px 2px #666; border: 1px solid #eee; padding: 20px; }
+/* line 25, ../sass/demo.scss */
+#output .title { text-align: center; font-size: 25px; font-size-width: bolder; }
+/* line 31, ../sass/demo.scss */
+#output .version-info { text-align: center; }
+/* line 33, ../sass/demo.scss */
+#output .version-info dt { font-size: 30px; line-height: 40px; }
+/* line 36, ../sass/demo.scss */
+#output .version-info dt:before { content: "作者："; }
+/* line 40, ../sass/demo.scss */
+#output .version-info dd { margin-top: 10px; line-height: 25px; }
+
+/* line 48, ../sass/demo.scss */
+#nowDate { text-align: center; }
+
+/* line 51, ../sass/demo.scss */
+.map { width: 80%; height: 400px; margin: 10px auto; border: 1px solid #eee; box-shadow: 2px 2px 2px #666; }
+
+/* line 58, ../sass/demo.scss */
+.ko { box-shadow: 2px 2px 2px #666; border: 1px solid #eee; width: 80%; margin-top: 20px; margin-left: auto; margin-right: auto; }
+/* line 67, ../sass/demo.scss */
+.ko .ko-title { margin-top: 20px; }
+/* line 72, ../sass/demo.scss */
+.ko .koList, .ko .koList li { list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+/* line 78, ../sass/demo.scss */
+.ko .koList li { min-width: 50px; -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; }
+/* line 11, ../sass/demo.scss */
+.ko .koList li:after { content: ""; display: block; clear: both; height: 0; }
+/* line 83, ../sass/demo.scss */
+.ko .koList li input[type=text] { margin: 10px 5px; text-align: center; }
+
+/*# sourceMappingURL=demo.css.map */

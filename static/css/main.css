@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/**  */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+/* line 10, ../sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, ../sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 25, ../sass/base/_reset.scss */
+body { line-height: 1; }
+
+/* line 26, ../sass/base/_reset.scss */
+ol, ul { list-style: none; }
+
+/* line 27, ../sass/base/_reset.scss */
+blockquote, q { quotes: none; }
+
+/* line 28, ../sass/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 29, ../sass/base/_reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* ---- add ---- */
+/* line 31, ../sass/base/_reset.scss */
+body { font-size: 12px; margin: 0; padding: 0; font-family: Arial,"微软雅黑","microsoft yahei","MS YaHei","MS YaHei UI",verdana,sans-serif; }
+
+/* line 32, ../sass/base/_reset.scss */
+body, html { height: 100%; }
+
+/* line 33, ../sass/base/_reset.scss */
+img { border: 0; }
+
+/* line 34, ../sass/base/_reset.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+/* line 35, ../sass/base/_reset.scss */
+select, input { vertical-align: middle; }
+
+/* line 36, ../sass/base/_reset.scss */
+.clear { display: block !important; clear: both !important; float: none !important; margin: 0 !important; padding: 0 !important; height: 0; line-height: 0; font-size: 0; overflow: hidden; }
+
+/* line 37, ../sass/base/_reset.scss */
+.clearfix { zoom: 1; }
+
+/* line 38, ../sass/base/_reset.scss */
+.clearfix:after { content: ""; display: block; clear: both; height: 0; }
+
+/* line 39, ../sass/base/_reset.scss */
+.spacer { clear: both; font-size: 0; height: 0; line-height: 0; }
+
+/* line 40, ../sass/base/_reset.scss */
+a { color: #333; text-decoration: none; }
+
+/* line 41, ../sass/base/_reset.scss */
+a:hover { color: #f00; }
+
+/* line 42, ../sass/base/_reset.scss */
+img, input, label { vertical-align: middle; }
+
+/*垂直居中*/
+/* ---- float ---- */
+/* line 44, ../sass/base/_reset.scss */
+.fl { float: left; }
+
+/* line 45, ../sass/base/_reset.scss */
+.fr { float: right; }
+
+/*# sourceMappingURL=main.css.map */
