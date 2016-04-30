@@ -16,6 +16,8 @@
 > **使用到的JS库：**
 > - three.min.js
 > - CSS3DRenderer.js
+>
+> 源码Demo：[http://mrleo.github.io/3DPanorama](http://mrleo.github.io/3DPanorama)
 ###设置相机
 ```js
 //设置相机
